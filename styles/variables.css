@@ -20,9 +20,10 @@
 
   --container-margin: 10px;
   --content-margin: 40px;
-  --section-gap: 50px;
-  --grid-gap: 20px;
-  --tips-gap: 10px;
+  --between-sections-gap: 50px;
+  --between-cards-gap: 20px;
+  --card-gap: 10px;
+  --tip-gap: 10px;
   --gallery-gap: 10px;
 
   --page-bg-image: url("../images/cover-image-dark.png");
