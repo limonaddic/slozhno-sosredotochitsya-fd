@@ -106,13 +106,14 @@
   border: 1px solid var(--decor-color-hover);
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
   outline: none;
   border-block-end: 1px solid var(--decor-color);
 }
 
 .header__theme-menu-button_active {
   border: 1px solid var(--decor-color-hover);
+  pointer-events: none;
 }
 
 .header__title {
@@ -199,7 +200,7 @@
 .card__text a:hover {
   border-color: var(--link-color-hover);
 }
-.card__text a:focus {
+.card__text a:focus-visible {
   outline: none;
   border: 1px solid var(--link-color-hover);
 }
