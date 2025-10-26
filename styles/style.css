@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 /* базовая тема (тёмная) верстается первой */
 .page {
+  padding: var(--page-padding);
   background-image: var(--page-bg-image);
   background-position: center;
   background-size: cover;
@@ -11,7 +12,6 @@
 /* декоративные уголки */
 .decorated-zone {
   position: relative;
-  padding: var(--container-margin);
 }
 
 .decorated-zone::before,
@@ -25,15 +25,15 @@
 }
 
 .decorated-zone::before {
-  inset-block-start: var(--container-margin);
-  inset-inline-end: var(--container-margin);
+  inset-block-start: 0;
+  inset-inline-end: 0;
   border-inline-start: none;
   border-block-end: none;
 }
 
 .decorated-zone::after {
-  inset-inline-start: var(--container-margin);
-  inset-block-end: var(--container-margin);
+  inset-inline-start: 0;
+  inset-block-end: 0;
   border-inline-end: none;
   border-block-start: none;
 }
@@ -42,17 +42,19 @@
 
 .header {
   block-size: 100vh;
-  min-block-size: 648px;
+  min-block-size: var(--min-block-size);
+  padding: 0;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   align-content: start;
-  gap: 55px;
+  row-gap: var(--header-gap);
+  position: relative;
 }
 
 .rec-badge {
   position: absolute;
-  right: 19px;
-  top: 10px;
+  right: 9px;
+  top: 0;
   color: var(--decor-color);
   font-size: 18px;
   font-style: normal;
@@ -144,9 +146,10 @@
 .content {
   display: grid;
   gap: var(--between-sections-gap);
-  padding-inline-start: var(--container-margin);
-  padding-inline-end: var(--container-margin);
-  margin: var(--content-margin) 0;
+  margin: var(--content-top-margin) 0;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 130%;
 }
 
 .section {
@@ -156,11 +159,8 @@
 
 .section__title {
   color: var(--decor-color);
-  font-family: "IBM Plex Mono";
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 130%;
 }
 
 .cards {
@@ -173,9 +173,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content max-content;
   gap: var(--card-gap);
-  font-size: 18px;
-  font-style: normal;
-  line-height: 130%;
 }
 
 .card__title {
@@ -244,7 +241,6 @@
   min-block-size: 668px;
   display: grid;
   place-items: center;
-  
 }
 
 .footer__title {
@@ -267,10 +263,8 @@
 
 @media (width >= 768px) {
   .header {
-    min-block-size: 1024px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    row-gap: 162px;
     column-gap: 0;
   }
   .header__theme-menu {
@@ -292,12 +286,6 @@
 
   /*====content====*/
 
-  .content {
-    --between-section-gap: 80px;
-    padding-inline-start: var(--container-margin);
-    padding-inline-end: var(--container-margin);
-    --content-margin: 60px;
-  }
   .section {
     grid-template-columns: 1fr 2fr;
     gap: var(--between-cards-gap);
@@ -316,9 +304,6 @@
     display: grid;
     grid-template-columns: 1fr;
 
-  }
-  .section--gallery {
-    --gallery-gap: 20px;
   }
   .gallery {
     grid-template-columns: repeat(3, 1fr);
@@ -354,10 +339,6 @@
 }
 
 @media (width >= 1024px) {
-  .header {
-    min-block-size: 768px;
-    row-gap: 114px;
-  }
   .header__theme-menu {
     grid-column: 1 / -1;
     grid-row: 1;
@@ -380,9 +361,6 @@
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-  .section--gallery {
-    --gallery-gap: 20px;
   }
   .gallery {
     grid-template-columns: repeat(3, 1fr);

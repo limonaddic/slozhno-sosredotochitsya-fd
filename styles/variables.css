@@ -14,12 +14,10 @@
   --decor-color: #FF0070;
   --decor-color-hover: rgba(255, 0, 112, 0.40);
 
-  --font-family: "IBM Plex mono", monospace;
-  --fs-base: 18px;
-  --lh-base: 1.3;
-
-  --container-margin: 10px;
-  --content-margin: 40px;
+  --page-padding: 10px;
+  --min-block-size: 648px;
+  --header-gap: 55px;
+  --content-top-margin: 40px;
   --between-sections-gap: 50px;
   --between-cards-gap: 20px;
   --card-gap: 10px;
@@ -28,5 +26,23 @@
 
   --page-bg-image: url("../images/cover-image-dark.png");
   --page-bg-color: #000028;
+}
+
+@media (width >= 768px) {
+  :root {
+    --page-padding: 20px;
+    --min-block-size: 984px;
+    --header-gap: 162px;
+    --content-top-margin: 60px;
+    --between-sections-gap: 80px;
+    --gallery-gap: 20px;
+  }
+}
+
+@media (width >= 1024px) {
+  :root {
+    --min-block-size: 728px;
+    --header-gap: 114px;
+  }
 }
 
