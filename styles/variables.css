@@ -7,18 +7,18 @@
   /* базовая (тёмная) тема */
   --bg-color: #000028;
   --text-color: #f1b2ce;
-  --title-color: #DB00FF;
+  --title-color: #db00ff;
   --accent-color: #ff0070;
   --accent-text-on: #000028;
   --link-color-hover: #f1b2ce;
-  --decor-color: #FF0070;
-  --decor-color-hover: rgba(255, 0, 112, 0.40);
+  --decor-color: #ff0070;
+  --decor-color-hover: rgba(255, 0, 112, 0.4);
 
   --page-padding: 10px;
   --min-block-size: 648px;
   --header-gap: 55px;
   --content-top-margin: 40px;
-  --between-sections-gap: 50px;
+  --between-sections-gap: 40px;
   --between-cards-gap: 20px;
   --card-gap: 10px;
   --tip-gap: 10px;
@@ -30,12 +30,13 @@
 
 @media (width >= 768px) {
   :root {
-    --page-padding: 20px;
+    --page-padding: 20px 20px 20px 0;
     --min-block-size: 984px;
     --header-gap: 162px;
-    --content-top-margin: 60px;
+    --content-top-margin: 80px;
     --between-sections-gap: 80px;
     --gallery-gap: 20px;
+    --between-cards-gap: 20px;
   }
 }
 
@@ -45,4 +46,3 @@
     --header-gap: 114px;
   }
 }
-
