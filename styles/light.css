@@ -9,17 +9,22 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-color: #fff1f7;
-  --text-color: #353430;
-  --title-color: #ffc2e6;
-  --accent-color: #ff8dcb;
-  --accent-text-on: #353430;
-  --link-color-hover: #353430;
-  --decor-color: #353430;
-  --decor-color-hover: rgba(53, 52, 48, 0.4);
+  --dark-grey: #353430;
+  --light-grey: rgba(50, 49, 45, 0.4);
+  --accent-pink: #FF8DCB;
+  --pink: #FFC2E6;
+  --pale-pink: #FFF1F7;
+
+  --bg-color: var(--pale-pink);
+  --text-color: var(--dark-grey);
+  --title-color: var(--pink);
+  --accent-color: var(--accent-pink);
+  --accent-text-on: var(--dark-grey);
+  --decor-color: var(--accent-pink);
+  --decor-color-hover: var(--light-grey);
 
   --page-bg-image: url("../images/cover-image-light.png");
-  --page-bg-color: #ffeef6;
+  --page-bg-color: var(--pale-pink);
 }
 
 :root.theme-light .rec-badge {
@@ -28,17 +33,22 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #fff1f7;
-    --text-color: #353430;
-    --title-color: #ffc2e6;
-    --accent-color: #ff8dcb;
-    --accent-text-on: #353430;
-    --link-color-hover: #353430;
-    --decor-color: #353430;
-    --decor-color-hover: rgba(53, 52, 48, 0.4);
+    --dark-grey: #353430;
+    --light-grey: rgba(50, 49, 45, 0.4);
+    --accent-pink: #FF8DCB;
+    --pink: #FFC2E6;
+    --pale-pink: #FFF1F7;
+
+    --bg-color: var(--pale-pink);
+    --text-color: var(--dark-grey);
+    --title-color: var(--pink);
+    --accent-color: var(--accent-pink);
+    --accent-text-on: var(--dark-grey);
+    --decor-color: var(--accent-pink);
+    --decor-color-hover: var(--light-grey);
 
     --page-bg-image: url("../images/cover-image-light.png");
-    --page-bg-color: #ffeef6;
+    --page-bg-color: var(--pale-pink);
   }
 }
 

@@ -9,15 +9,20 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-   --bg-color: #000028;
-  --text-color: #f1b2ce;
-  --title-color: #DB00FF;
-  --accent-color: #ff0070;
-  --accent-text-on: #000028;
-  --link-color-hover: #f1b2ce;
-  --decor-color: #FF0070;
-  --decor-color-hover: rgba(255, 0, 112, 0.40);
+    --dark-violet: #000028;
+    --fucsia: #FF0070;
+    --dusty-fucsia: rgba(255, 0, 112, 0.4);
+    --purple: #DB00FF;
+    --pink-dust: #F1B2CE;
 
-  --page-bg-image: url("../images/cover-image-dark.png");
-  --page-bg-color: #00183a;
+    --bg-color: var(--dark-violet);
+    --text-color: var(--pink-dust);
+    --title-color: var(--purple);
+    --accent-color: var(--fucsia);
+    --accent-text-on: var(--dark-violet);
+    --decor-color: var(--fucsia);
+    --decor-color-hover: var(--dusty-fucsia);
+
+    --page-bg-image: url("../images/cover-image-dark.png");
+    --page-bg-color: var(--dark-violet);
 }

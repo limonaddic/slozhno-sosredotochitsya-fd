@@ -5,19 +5,24 @@
 
 :root {
   /* базовая (тёмная) тема */
-  --bg-color: #000028;
-  --text-color: #f1b2ce;
-  --title-color: #db00ff;
-  --accent-color: #ff0070;
-  --accent-text-on: #000028;
-  --link-color-hover: #f1b2ce;
-  --decor-color: #ff0070;
-  --decor-color-hover: rgba(255, 0, 112, 0.4);
+  --dark-violet: #000028;
+  --fucsia: #FF0070;
+  --dusty-fucsia: rgba(255, 0, 112, 0.4);
+  --purple: #DB00FF;
+  --pink-dust: #F1B2CE;
+
+  --bg-color: var(--dark-violet);
+  --text-color: var(--pink-dust);
+  --title-color: var(--purple);
+  --accent-color: var(--fucsia);
+  --accent-text-on: var(--dark-violet);
+  --decor-color: var(--fucsia);
+  --decor-color-hover: var(--dusty-fucsia);
 
   --page-padding: 10px;
-  --min-block-size: 648px;
+  --min-block-size: 668px;
   --header-gap: 55px;
-  --content-top-margin: 40px;
+  --content-top-margin: 30px;
   --between-sections-gap: 40px;
   --between-cards-gap: 20px;
   --card-gap: 10px;
@@ -30,10 +35,10 @@
 
 @media (width >= 768px) {
   :root {
-    --page-padding: 20px 20px 20px 0;
-    --min-block-size: 984px;
+    --page-padding: 20px;
+    --min-block-size: 1024px;
     --header-gap: 162px;
-    --content-top-margin: 80px;
+    --content-top-margin: 60px;
     --between-sections-gap: 80px;
     --gallery-gap: 20px;
     --between-cards-gap: 20px;
@@ -42,7 +47,7 @@
 
 @media (width >= 1024px) {
   :root {
-    --min-block-size: 728px;
+    --min-block-size: 768px;
     --header-gap: 114px;
   }
 }
