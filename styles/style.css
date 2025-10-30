@@ -314,7 +314,6 @@
     grid-template-columns: 1fr;
   }
   .section--gallery {
-    block-size: 823px;
     grid-template-rows: min-content 1fr;
     padding-block-start: 0;
   }
@@ -402,9 +401,6 @@
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-  .section--gallery {
-    block-size: 1091px;
   }
   .gallery {
     block-size: 1048px;
