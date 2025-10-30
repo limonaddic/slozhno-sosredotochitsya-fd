@@ -18,6 +18,7 @@
   --accent-text-on: var(--dark-violet);
   --decor-color: var(--fucsia);
   --decor-color-hover: var(--dusty-fucsia);
+  --decor-text: var(--fucsia);
 
   --page-padding: 10px;
   --min-block-size: 668px;

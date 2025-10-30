@@ -22,6 +22,7 @@
     --accent-text-on: var(--dark-violet);
     --decor-color: var(--fucsia);
     --decor-color-hover: var(--dusty-fucsia);
+    --decor-text: var(--fucsia);
 
     --page-bg-image: url("../images/cover-image-dark.png");
     --page-bg-color: var(--dark-violet);

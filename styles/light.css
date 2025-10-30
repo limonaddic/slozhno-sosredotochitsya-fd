@@ -22,6 +22,8 @@
   --accent-text-on: var(--dark-grey);
   --decor-color: var(--accent-pink);
   --decor-color-hover: var(--light-grey);
+  --decor-text: var(--dark-grey);
+
 
   --page-bg-image: url("../images/cover-image-light.png");
   --page-bg-color: var(--pale-pink);
@@ -46,6 +48,7 @@
     --accent-text-on: var(--dark-grey);
     --decor-color: var(--accent-pink);
     --decor-color-hover: var(--light-grey);
+    --decor-text: var(--dark-grey);
 
     --page-bg-image: url("../images/cover-image-light.png");
     --page-bg-color: var(--pale-pink);
